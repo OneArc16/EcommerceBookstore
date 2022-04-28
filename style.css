@@ -1,0 +1,217 @@
+/*HEADER*/
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+*{
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    backdrop-filter: blur(1.5px);
+    transition: 0.7s;   
+}
+
+header.abajo{
+    background: rgb(27, 20, 20);
+    padding: 1.5px;
+} 
+
+nav{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 200px;
+    margin-left:20px;
+}
+
+.bar-btn{
+    font-size:25px;
+    color:#fff;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.nav-menu{
+    position: fixed;
+    width: 100%;
+    height: 0vh;
+    top: 100px;
+    background: rgba(0, 0, 0, .95);
+    text-align: center;
+    transition: all .5s;
+}
+
+.nav-menu li{
+    display: none;     
+    line-height: 30px;
+    margin: 50px 0;
+    transition: all .5s;
+}
+
+.nav-menu li a{
+    color: #fff;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+#check{
+    display: none;
+}
+
+#check:checked ~ .nav-menu{
+    height: 100vh;
+}
+
+#check:checked ~ .nav-menu li{
+    display: block;
+}
+
+@media screen and (min-width: 990px) {
+    .logo{
+        margin-left: 50px;
+    }
+
+    nav{
+        height: 100px;
+    }
+
+    .bar-btn{
+        display: none;
+    }
+
+    .nav-menu{
+        position: relative;
+        height: 100px;
+        top: 0;
+        background: none;
+        transition: none;
+        text-align: right;
+        margin-right: 50px;
+    }
+
+    .nav-menu li{
+        display: inline-block;
+        line-height: 100px;
+        margin: 0 20px;
+        transition: none;
+    }
+    
+    .nav-menu li a{
+        font-size: 12px;
+    }
+}
+
+/* aside */
+
+.Container1 {
+    background-image: url(src/imagen1.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.Container1 P {
+    color: rgb(223, 217, 217);
+    font-family: roboto,sans-serif;
+    font-size: 40px;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+/*container 2*/
+
+.Container2 {
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.subContainer2 {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 7%;
+}
+
+.Container2 div {
+    text-align: center;
+}
+
+.Container2 P {
+    color: rgb(119, 119, 119);
+    font-size: 35px;
+    text-align: center;
+    margin-top: 13%;
+}
+
+.Container2 div a {
+    color: aliceblue;
+    background-color: rgb(53, 141, 255);
+    border-radius: 5px;
+    padding: 15px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.Container2 div a:hover,
+.Container3 a:hover {
+    background-color: rgb(26, 98, 193);
+}
+
+.img2 {
+    background-image: url(src/imagen\ 2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: initial;
+}
+
+
+/*container 3*/
+
+.Container3 {
+    background-image: url(src/paralax.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.Container3 P {
+    color: rgb(251, 251, 251);
+    font-size: 35px;
+    text-align: center;
+}
+
+.Container3 a {
+    color: aliceblue;
+    background-color: rgb(53, 141, 255);
+    border-radius: 5px;
+    padding: 15px;
+    text-decoration: none;
+    font-size: 20px;
+}

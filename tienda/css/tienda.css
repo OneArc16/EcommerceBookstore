@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+ /* *{
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+header{
+    position:sticky ;
+    width: 100%;
+    backdrop-filter: blur(1.5px);
+    transition: 0.7s;   
+    background:  rgb(27, 20, 20);
+}
+
+ header.abajo{
+    background: rgb(27, 20, 20);
+    padding: 1.5px;
+}  
+
+ nav{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} */
+
+/* .logo {
+   
+}  */
+
+/* .bar-btn{
+    font-size:25px;
+    color:#fff;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.nav-menu{
+    position: fixed;
+    width: 100%;
+    height: 0vh;
+    top: 100px;
+    background: rgba(0, 0, 0, .95);
+    text-align: center;
+    transition: all .5s;
+}
+
+.nav-menu li{
+    display: none;     
+    line-height: 30px;
+    margin: 50px 0;
+    transition: all .5s;
+}
+
+.nav-menu li a{
+    color: #fff;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+#check{
+    display: none;
+}
+
+#check:checked ~ .nav-menu{
+    height: 100vh;
+}
+
+#check:checked ~ .nav-menu li{
+    display: block;
+}
+
+@media screen and (min-width: 990px) {
+    .logo{
+        margin-left: 50px;
+    }
+
+    nav{
+        height: 100px;
+    }
+
+    .bar-btn{
+        display: none;
+    }
+
+    .nav-menu{
+        position: relative;
+        height: 100px;
+        top: 0;
+        background: none;
+        transition: none;
+        text-align: right;
+        margin-right: 50px;
+    }
+
+    .nav-menu li{
+        display: inline-block;
+        line-height: 100px;
+        margin: 0 20px;
+        transition: none;
+    }
+    
+    .nav-menu li a{
+        font-size: 12px;
+    }
+}  */
+
+/*container filtros*/
+
+.Container {
+    display: flex;
+    width: fit-content;
+}
+
+.Container_Cards {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10%;
+    overflow: hidden;
+}
+
+.Container_NavBar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.ContainerFiltroNav {
+    width: 100%;
+}
+
+.Container_NavBar ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.Container_NavBar ul li {
+    padding: 8px;
+    list-style: none;
+    border-radius: 3px;
+    background: rgba(65, 175, 162, 0.137);
+}
+
+.Container_NavBar ul li a {
+    text-decoration: none;
+    color: rgba(70, 70, 70, 0.774);
+}
+
+.Container_NavBar ul li:hover {
+    background: rgba(65, 175, 162, 0.068);
+}
+
+.ContainerBusqueda {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.buscar {
+    width: 78%;
+    border-radius: 100px;
+    background: #fff;
+    border: 1px solid;
+    text-align: center;
+    font-size: 16px;
+}
+
+.Container_Generos ul {
+    display: flex;
+    justify-content: space-evenly;
+    margin-right: 300px;
+}
+
+.Container_Generos ul li {
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    list-style: none;
+    border-radius: 50px;
+    background: rgba(65, 175, 162, 0.137);
+    margin-left: 25px;
+}
+
+.Container_Generos ul li:hover {
+    background: rgba(65, 175, 162, 0.068);
+}
+
+.Container_Generos ul li a {
+    text-decoration: none;
+    color: rgba(70, 70, 70, 0.774);
+}
+
+
+/*Cards*/
+
+.Cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-right: 15%;
+}
+
+.Card {
+    width: 100%;
+    overflow: hidden;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 100%;
+    padding: 5%;
+}
+
+.ContainerIngo {
+    display: flex;
+    flex-direction: column;
+}
+
+.CardContainer {
+    margin: 3%;
+    background: rgba(65, 175, 162, 0.047);
+}
+
+.buttonContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.Card h2 {
+    font-size: 20px;
+}
+
+.Card p {
+    font-size: 17px;
+    color: black;
+}
+
+.imgCard {
+    max-width: 150px;
+    width: 135px;
+}
+
+.añadir {
+    border: 1px solid;
+    border-radius: 5px;
+    color: white;
+    background: #46A2FD;
+    padding: 3%;
+}
+
+
+/*footer*/
+
+.d-flex {
+    color: black;
+    margin-right: 5px;
+}
+
+.d-flex button {
+    font-size: 18px;
+    margin-right: 8px;
+}
+
+.nav-link {
+    font-size: 18px;
+}
+
+.d-flex input {
+    font-size: 18px;
+}
+
+.logo {
+    width: 3rem;
+    border: 1px solid;
+    border-radius: 50%;
+}
