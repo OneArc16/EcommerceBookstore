@@ -1,16 +1,6 @@
-section {
-    Height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-
-/*header*/
-
 .d-flex {
     color: black;
-    margin-right: 5px;
+    margin-right: 10px;
 }
 
 .d-flex button {
@@ -74,7 +64,7 @@ section {
 .portada {
     border: 3px solid;
     margin-left: 120px;
-    width: 180px;
+    width: 280px;
     height: 280px;
 }
 
