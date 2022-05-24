@@ -17,7 +17,7 @@ input.addEventListener('keyup', (e) => {
 //aca jesus debe hacer la coneccion es todo
 const fetchBook = async() => {
     try {
-        const response = await fetch('https://fakerapi.it/api/v1/books?_quantity=10')//aca cambias la cantidad de libros
+        const response = await fetch('https://fakerapi.it/api/v1/books?_quantity=20')//aca cambias la cantidad de libros
         return await response.json()
     } catch (error) {
         console.error();
